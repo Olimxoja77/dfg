@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+  </head>
+  <style>
+    body {
+      background: white;
+    }
+    .dark {
+      background: #000;
+      color: white;
+    }
+    .box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    img {
+      width: 300px;
+      height: 200px;
+    }
+    #loading {
+      text-align: center;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+  <body class="light">
+    <button class="light">Light/Dark</button>
+    <img src="./Animation - 1737724517508.gif" alt="Loading" id="loading" />
+    <select id="sortSelect">
+      <option value="">Sort by</option>
+      <option value="asc">A-Z</option>
+      <option value="desc">Z-A</option>
+    </select>
+    <input type="text" id="searchInput" placeholder="Search countries..." />
+    <button class="btn2">Search</button>
+    <div class="box"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>
